@@ -1,0 +1,17 @@
+{
+  "name": "adapt-authoring-middleware",
+  "version": "0.0.1",
+  "description": "Express middleware to be added to the server",
+  "main": "index.js",
+  "adapt_authoring": {
+    "module": true,
+    "documentation": {
+      "enable": true,
+      "include": "lib/*"
+    }
+  },
+  "dependencies": {
+    "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
+    "body-parser": "1.18.3"
+  }
+}
