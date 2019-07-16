@@ -1,0 +1,4 @@
+{
+  "noacceptedtypes": "checkAcceptedTypes: no accepted types specified in config",
+  "unsupportedtype": "Bad input: requested content type not supported (%{reqtype}). Accepted types: %{acceptedTypes}"
+}
