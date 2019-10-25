@@ -15,7 +15,8 @@
     }
   },
   "dependencies": {
-    "body-parser": "1.18.3"
+    "body-parser": "1.18.3",
+    "helmet": "3.21.2"
   },
   "peerDependencies": {
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git"
