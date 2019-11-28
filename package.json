@@ -19,6 +19,6 @@
     "helmet": "3.21.2"
   },
   "peerDependencies": {
-    "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git"
+    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core.git"
   }
 }
