@@ -1,2 +1,1 @@
-const middlewareMod = require('./lib/module');
-module.exports = middlewareMod;
+module.exports = require('./lib/middlewareModule');
