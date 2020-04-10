@@ -5,6 +5,7 @@
     "acceptedTypes": {
       "type": "array",
       "description": "Content types the API accepts (may use MIME types or extension names)",
+      "items": { "type": "string" },
       "default": ["application/json"]
     }
   }
