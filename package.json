@@ -4,7 +4,7 @@
   "description": "Express middleware to be added to the server",
   "homepage": "https://github.com/adaptlearning/adapt-authoring-middleware",
   "license": "GPL-3.0",
-  "repository": "github:adaptlearning/adapt-authoring-middleware",
+  "repository": "adaptlearning/adapt-authoring-middleware",
   "main": "index.js",
   "dependencies": {
     "body-parser": "1.18.3",
@@ -13,7 +13,7 @@
     "lodash": "^4.17.19"
   },
   "peerDependencies": {
-    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core.git",
-    "zipper": "github:taylortom/zipper"
+    "adapt-authoring-core": "adapt-security/adapt-authoring-core",
+    "zipper": "taylortom/zipper"
   }
 }
