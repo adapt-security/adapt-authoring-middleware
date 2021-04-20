@@ -12,10 +12,6 @@
       "type": "number",
       "description": "Limit the size of any uploaded file",
       "default": 524288000
-    },
-    "fileUploadTempDir": {
-      "type": "string",
-      "description": "The directory that uploaded files are stored in"
     }
   }
 }
