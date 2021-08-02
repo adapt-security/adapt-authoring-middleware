@@ -10,7 +10,7 @@
     "body-parser": "1.18.3",
     "formidable": "1.2.2",
     "helmet": "3.21.2",
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.21"
   },
   "peerDependencies": {
     "adapt-authoring-core": "adapt-security/adapt-authoring-core",
