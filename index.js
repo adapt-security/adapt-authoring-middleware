@@ -1,1 +1,1 @@
-export { default } from './lib/MiddlewareModule';
+export { default } from './lib/MiddlewareModule.js';
