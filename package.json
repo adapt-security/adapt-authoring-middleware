@@ -4,6 +4,7 @@
   "description": "Express middleware to be added to the server",
   "homepage": "https://github.com/adaptlearning/adapt-authoring-middleware",
   "license": "GPL-3.0",
+  "type": "module",
   "main": "index.js",
   "repository": "adaptlearning/adapt-authoring-middleware",
   "dependencies": {
