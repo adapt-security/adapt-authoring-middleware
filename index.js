@@ -1,1 +1,1 @@
-module.exports = require('./lib/MiddlewareModule');
+export { default } from './lib/MiddlewareModule';
