@@ -9,7 +9,7 @@
   "repository": "adaptlearning/adapt-authoring-middleware",
   "dependencies": {
     "body-parser": "1.18.3",
-    "formidable": "1.2.2",
+    "formidable": "^2.0.1",
     "helmet": "3.21.2",
     "lodash": "^4.17.21"
   },
