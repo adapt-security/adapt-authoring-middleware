@@ -10,7 +10,7 @@
   "dependencies": {
     "body-parser": "1.18.3",
     "formidable": "^2.0.1",
-    "helmet": "3.21.2",
+    "helmet": "3.23.3",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
