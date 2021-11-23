@@ -14,7 +14,7 @@
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "adapt-authoring-core": "adapt-security/adapt-authoring-core",
+    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
     "zipper": "taylortom/zipper"
   }
 }
