@@ -2,11 +2,11 @@
   "name": "adapt-authoring-middleware",
   "version": "0.0.1",
   "description": "Express middleware to be added to the server",
-  "homepage": "https://github.com/adaptlearning/adapt-authoring-middleware",
+  "homepage": "https://github.com/adapt-security/adapt-authoring-middleware",
   "license": "GPL-3.0",
   "type": "module",
   "main": "index.js",
-  "repository": "adaptlearning/adapt-authoring-middleware",
+  "repository": "github:adapt-security/adapt-authoring-middleware",
   "dependencies": {
     "body-parser": "1.18.3",
     "formidable": "^2.0.1",
