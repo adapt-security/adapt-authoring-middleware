@@ -1,0 +1,17 @@
+{
+  "BODY_PARSE_FAILED": {
+    "data": {
+      "error": "The error message"
+    },
+    "description": "Failed to parse request body data",
+    "statusCode": 400
+  },
+  "UNEXPECTED_FILE_TYPES": {
+    "data": {
+      "expectedFileTypes": "The list of expected file types",
+      "invalidFiles": "The list of invalid files"
+    },
+    "description": "Recieved unexpected file types",
+    "statusCode": 400
+  }
+}

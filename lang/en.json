@@ -1,6 +1,0 @@
-{
-  "error.noacceptedtypes": "checkAcceptedTypes: no accepted types specified in config",
-  "error.unsupportedtype": "Bad input: requested content type not supported (%{reqtype}). Accepted types: %{acceptedTypes}",
-  "error.unexpectedtype": "Recieved unexpected file type %{files}, expected %{types}",
-  "error.bodyparse": "Failed to parse request body, %{error}"
-}
