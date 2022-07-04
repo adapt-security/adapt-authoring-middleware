@@ -12,10 +12,10 @@
     "body-parser": "1.18.3",
     "formidable": "^3.2.1",
     "helmet": "3.21.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "zipper": "taylortom/zipper"
   },
   "peerDependencies": {
-    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
-    "zipper": "taylortom/zipper"
+    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core"
   }
 }
