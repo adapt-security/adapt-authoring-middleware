@@ -13,7 +13,7 @@
     "formidable": "^3.2.1",
     "helmet": "3.21.2",
     "lodash": "^4.17.21",
-    "zipper": "taylortom/zipper"
+    "zipper": "adapt-security/zipper"
   },
   "peerDependencies": {
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core"
