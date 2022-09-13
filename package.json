@@ -10,6 +10,7 @@
   "dependencies": {
     "adapt-authoring-ratelimiter": "github:adapt-security/adapt-authoring-ratelimiter",
     "body-parser": "1.18.3",
+    "compression": "^1.7.4",
     "formidable": "^3.2.1",
     "helmet": "3.21.2",
     "lodash": "^4.17.21",
