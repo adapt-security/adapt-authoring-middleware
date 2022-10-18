@@ -15,6 +15,12 @@
       "_adapt": {
         "isPublic": true
       }
+    },
+    "uploadTempDir": {
+      "type": "string",
+      "description": "Temporary directory for file uploads",
+      "isDirectory": true,
+      "default": "$TEMP/formidable"
     }
   }
 }
