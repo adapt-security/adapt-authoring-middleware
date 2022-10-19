@@ -9,6 +9,7 @@
   "repository": "github:adapt-security/adapt-authoring-middleware",
   "dependencies": {
     "adapt-authoring-ratelimiter": "github:adapt-security/adapt-authoring-ratelimiter",
+    "axios": "^1.1.3",
     "body-parser": "1.18.3",
     "compression": "^1.7.4",
     "formidable": "^3.2.1",
