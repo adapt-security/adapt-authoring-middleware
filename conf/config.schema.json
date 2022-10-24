@@ -20,7 +20,7 @@
       "type": "string",
       "description": "Temporary directory for file uploads",
       "isDirectory": true,
-      "default": "$TEMP/formidable"
+      "default": "$TEMP/file-uploads"
     }
   }
 }
