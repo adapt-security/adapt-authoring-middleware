@@ -6,6 +6,14 @@
     "description": "Failed to parse request body data",
     "statusCode": 400
   },
+  "FILE_EXCEEDS_MAX_SIZE": {
+    "data": {
+      "file": "File path",
+      "size": "Size of file"
+    },
+    "description": "Uploaded file exceeds the size limit",
+    "statusCode": 400
+  },
   "UNEXPECTED_FILE_TYPES": {
     "data": {
       "expectedFileTypes": "The list of expected file types",
