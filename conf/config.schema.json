@@ -10,8 +10,9 @@
     },
     "fileUploadMaxFileSize": {
       "description": "Limit the size of any uploaded file",
-      "type": "number",
-      "default": 524288000,
+      "type": "string",
+      "isBytes": true,
+      "default": "50mb",
       "_adapt": {
         "isPublic": true
       }
