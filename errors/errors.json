@@ -8,11 +8,11 @@
   },
   "FILE_EXCEEDS_MAX_SIZE": {
     "data": {
-      "file": "File path",
+      "maxSize": "The maximum file size",
       "size": "Size of file"
     },
     "description": "Uploaded file exceeds the size limit",
-    "statusCode": 400
+    "statusCode": 413
   },
   "UNEXPECTED_FILE_TYPES": {
     "data": {
