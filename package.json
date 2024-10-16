@@ -15,7 +15,7 @@
     "compression": "^1.7.4",
     "file-type": "^18.7.0",
     "formidable": "^3.5.1",
-    "helmet": "^6.2.0",
+    "helmet": "^8.0.0",
     "lodash": "^4.17.21",
     "zipper": "github:adapt-security/zipper"
   },
