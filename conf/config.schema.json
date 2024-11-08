@@ -9,7 +9,7 @@
       "default": ["application/json"]
     },
     "fileUploadMaxFileSize": {
-      "description": "Limit the size of any uploaded file",
+      "description": "Default file size limit for uploaded files. Note that other modules may specify their own limits, please check full config documentation for details.",
       "type": "string",
       "isBytes": true,
       "default": "50mb",
