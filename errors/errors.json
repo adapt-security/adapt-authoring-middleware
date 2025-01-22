@@ -14,6 +14,10 @@
     "description": "Uploaded file exceeds the size limit",
     "statusCode": 413
   },
+  "RATE_LIMIT_EXCEEDED": {
+    "description": "API rate limit has been exceeded",
+    "statusCode": 429
+  },
   "UNEXPECTED_FILE_TYPES": {
     "data": {
       "expectedFileTypes": "The list of expected file types",

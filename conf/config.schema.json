@@ -8,6 +8,17 @@
       "items": { "type": "string" },
       "default": ["application/json"]
     },
+    "apiRequestLimit": {
+      "description": "The number of API requests allowed by a single IP within the specified time limit",
+      "type": "number",
+      "default": 50
+    },
+    "apiRequestLimitDuration": {
+      "description": "Amount of time before the request count is reset",
+      "type": "string",
+      "isTimeMs": true,
+      "default": "1s"
+    },
     "fileUploadMaxFileSize": {
       "description": "Default file size limit for uploaded files. Note that other modules may specify their own limits, please check full config documentation for details.",
       "type": "string",
