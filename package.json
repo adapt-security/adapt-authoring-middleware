@@ -8,7 +8,6 @@
   "main": "index.js",
   "repository": "github:adapt-security/adapt-authoring-middleware",
   "dependencies": {
-    "adapt-authoring-ratelimiter": "github:adapt-security/adapt-authoring-ratelimiter",
     "axios": "^1.6.7",
     "body-parser": "^1.20.2",
     "bytes": "^3.1.2",
