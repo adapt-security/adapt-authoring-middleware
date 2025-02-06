@@ -15,4 +15,4 @@ jobs:
       - uses: actions/stale@v9
         with:
           days-before-stale: 1
-           stale-pr-label: 'sorted'
+          stale-pr-label: 'sorted'
