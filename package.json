@@ -20,7 +20,7 @@
     "zipper": "github:adapt-security/zipper"
   },
   "peerDependencies": {
-    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core"
+    "adapt-authoring-core": "^1.0.0"
   },
   "devDependencies": {
     "standard": "^17.1.0",
