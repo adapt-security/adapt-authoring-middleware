@@ -16,7 +16,7 @@
     "formidable": "^3.5.1",
     "helmet": "^8.0.0",
     "lodash": "^4.17.21",
-    "rate-limiter-flexible": "^8.2.0",
+    "rate-limiter-flexible": "^9.0.0",
     "zipper": "github:adapt-security/zipper"
   },
   "peerDependencies": {
