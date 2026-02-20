@@ -1,6 +1,6 @@
 {
   "name": "adapt-authoring-middleware",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Express middleware to be added to the server",
   "homepage": "https://github.com/adapt-security/adapt-authoring-middleware",
   "license": "GPL-3.0",
