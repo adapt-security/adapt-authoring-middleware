@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "adapt-authoring-mongodb": "^3.0.0",
-    "adapt-authoring-server": "^1.2.1"
+    "adapt-authoring-server": "^2.0.0"
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
