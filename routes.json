@@ -34,7 +34,7 @@
               "responses": {
                 "200": {
                   "description": "Lang strings for the specified locale",
-                  "content": { "application/json": {} }
+                  "content": { "application/json": { "schema": { "type": "object" } } }
                 }
               }
             }
