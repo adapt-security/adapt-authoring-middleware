@@ -14,7 +14,18 @@ function createInstance () {
     errors: {
       BODY_PARSE_FAILED: {
         setData: mock.fn(function () { return this })
+      },
+      UNKNOWN_LANG: {
+        setData: mock.fn(function () { return this })
       }
+    },
+    config: {
+      getPublicConfig: mock.fn(() => ({ 'some.key': 'value' }))
+    },
+    lang: {
+      phrases: { en: { hello: 'Hello' }, fr: { hello: 'Bonjour' } },
+      supportedLanguages: ['en', 'fr'],
+      translate: mock.fn((lang, key) => key)
     },
     dependencyloader: {
       moduleLoadedHook: { tap: () => {}, untap: () => {} }
@@ -130,6 +141,58 @@ describe('MiddlewareModule', () => {
       const { instance } = createInstance()
       const parser = instance.urlUploadParser(['image/png'], {})
       assert.equal(typeof parser, 'function')
+    })
+  })
+
+  describe('#configRequestHandler()', () => {
+    it('should respond with public config data', () => {
+      const { instance } = createInstance()
+      const res = { json: mock.fn() }
+      instance.configRequestHandler({}, res)
+      assert.equal(res.json.mock.calls.length, 1)
+      assert.deepEqual(res.json.mock.calls[0].arguments[0], { 'some.key': 'value' })
+    })
+  })
+
+  describe('#langRequestHandler()', () => {
+    it('should respond with phrases for the specified lang param', () => {
+      const { instance } = createInstance()
+      const req = { params: { lang: 'en' }, acceptsLanguages: mock.fn() }
+      const res = { json: mock.fn() }
+      instance.langRequestHandler(req, res, () => {})
+      assert.equal(res.json.mock.calls.length, 1)
+      assert.deepEqual(res.json.mock.calls[0].arguments[0], { hello: 'Hello' })
+    })
+
+    it('should fall back to Accept-Language header when no param given', () => {
+      const { instance } = createInstance()
+      const req = { params: {}, acceptsLanguages: mock.fn(() => 'fr') }
+      const res = { json: mock.fn() }
+      instance.langRequestHandler(req, res, () => {})
+      assert.equal(res.json.mock.calls.length, 1)
+      assert.deepEqual(res.json.mock.calls[0].arguments[0], { hello: 'Bonjour' })
+    })
+
+    it('should call next with UNKNOWN_LANG error for unknown lang', () => {
+      const { instance } = createInstance()
+      const req = { params: { lang: 'de' }, acceptsLanguages: mock.fn() }
+      const res = { json: mock.fn() }
+      const next = mock.fn()
+      instance.langRequestHandler(req, res, next)
+      assert.equal(next.mock.calls.length, 1)
+      assert.equal(res.json.mock.calls.length, 0)
+    })
+  })
+
+  describe('#addTranslationUtils()', () => {
+    it('should add translate function to req and call next', () => {
+      const { instance } = createInstance()
+      const req = { acceptsLanguages: mock.fn(() => 'en') }
+      const res = {}
+      const next = mock.fn()
+      instance.addTranslationUtils(req, res, next)
+      assert.equal(typeof req.translate, 'function')
+      assert.equal(next.mock.calls.length, 1)
     })
   })
 })
