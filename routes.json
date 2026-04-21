@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "route": "/config",
+      "handlers": { "get": "configRequestHandler" },
+      "permissions": { "get": null },
+      "meta": {
+        "get": {
+          "summary": "Retrieve public config data",
+          "responses": {
+            "200": {
+              "description": "The public config item data",
+              "content": { "application/json": { "schema": { "type": "object" } } }
+            }
+          }
+        }
+      }
+    },
+    {
+      "route": "/lang/:lang",
+      "handlers": { "get": "langRequestHandler" },
+      "permissions": { "get": null },
+      "meta": {
+        "get": {
+          "summary": "Retrieve lang strings for single locale",
+          "responses": {
+            "200": {
+              "description": "Lang strings for the specified locale",
+              "content": { "application/json": { "schema": { "type": "object" } } }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
