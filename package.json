@@ -18,7 +18,7 @@
     "helmet": "^8.0.0",
     "lodash": "^4.17.21",
     "rate-limiter-flexible": "^11.0.1",
-    "zipper": "github:adapt-security/zipper"
+    "@adapt-security/zipper": "^1.2.0"
   },
   "peerDependencies": {
     "adapt-authoring-mongodb": "^3.0.0",
